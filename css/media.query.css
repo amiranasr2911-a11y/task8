@@ -1,0 +1,40 @@
+/* Media query */
+
+/* XS Screen */
+@media screen and (min-width: 0px) {
+  .sign-in-btn {
+    width: 100%;
+  }
+  nav span {
+    color: #f1f1f1;
+  }
+  /* nav span.notification:hover {
+    color: #f1f1f1;
+  } */
+}
+
+/* SM Screen */
+@media screen and (min-width: 576px) {
+}
+
+/* MD Screen */
+@media screen and (min-width: 768px) {
+}
+
+/* LG Screen */
+@media screen and (min-width: 992px) {
+  .sign-in-btn {
+    width: auto;
+  }
+  nav span {
+    color: rgb(203, 254, 28);
+  }
+}
+
+/* XL Screen */
+@media screen and (min-width: 1200px) {
+}
+
+/* XXL Screen */
+@media screen and (min-width: 1400px) {
+}

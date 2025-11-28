@@ -1,0 +1,29 @@
+body{
+    background-color: #FFFCEB;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.bg-white{
+    background-color: white;
+}
+::marker {
+    
+    color:transparent;
+    display:none;
+}
+.w-10{
+    width: 5%;
+}
+.border{
+    border: 2px solid #F54A00;
+    border-radius: 50%;
+}
+.image{
+    position: relative;
+    border-top-left-radius:8px ;
+
+}
+.padge{
+    top:0;
+    left: 0;
+    background-color: white;
+}
