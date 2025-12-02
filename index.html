@@ -12,15 +12,15 @@
 <body>
  
   
-<nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+<nav class="navbar navbar-expand-lg mb-5 bg-white">
   <div class="container-fluid">
 
-    <div class="d-flex flex-column flex-sm-row align-items-center">
+    <div class="d-flex flex-row align-items-center">
       <a class="navbar-brand me-2" href="#">   
         <i class="fa-solid fa-utensils"></i>
       </a>
 
-      <div class="text-center text-sm-start mynav">
+      <div class="text-center text-sm-start   mynav">
         <h1 class="m-0">What's For Dinner</h1>
         <p class="m-0">Your daily meal inspiration</p>
       </div>
@@ -65,25 +65,28 @@
   
 
 
-<section >
-<div class="container bg-white rounded-2 mb-5 scrollable-container p-0">
-  <div class="row d-flex">
-    <div class="col-12  col-lg-6 position-relative "> 
-      
-      <img src="img/photo-1455619452474-d2be8b1e70cd.avif"  
-           class="w-100 h-100 image object-fit:cover" alt="">
+
+<!-- <img src="img/photo-1467003909585-2f8a72700288.avif" alt=""> -->
+
+<section class="d-flex flex-column flex-lg-row bg-white rounded-2 mb-5 scrollable-container p-0 m-5">
+  <div class="container  p-0">
+    <div class="row gap-2 " id="image">
+      <div class="col-12 col-lg-12 col-md-12 w-100 p-md-0">
+        <div class="inner position-relative ">
+           <img src="img/photo-1455619452474-d2be8b1e70cd.avif"  
+           class=" image  " alt="">
 
       <div class="padge position-absolute  rounded-pill p-2 bg-white text-dark">
         <i class="fa-solid fa-star text-warning"></i> 4.7 (267 reviews)
       </div>
 
-      <div class="padge2 position-absolute bg-white text-dark d-flex justify-content-between align-items-center rounded-3 p-3  ">
-<div class="pe-5 text-center">
+      <div class="padge2 position-absolute bg-white text-dark d-flex justify-content-between align-items-center rounded-3 p-3 w-75 ">
+<div class=" text-center">
   <i class="fa-solid fa-clock fa-xl"></i>
   <p class="text">Prep Time</p>
   <h5 class="h5">10 min</h5>
 </div>
-<div class="pe-5 text-center">
+<div class=" text-center">
 <i class="fa-solid fa-fire-burner fa-xl"></i>
   <p class="text">Cook Time</p>
   <h5 class="h5">15 min</h5>
@@ -91,83 +94,68 @@
 <div class=" text-center">
 <i class="fa-solid fa-users fa-xl"></i>
   <p class="text">Servings</p>
-  <h5 class="h5">2 people</h5>
+  <h5 class="h5">people</h5>
 </div>
       </div>
 
+        </div>
+      </div>
     </div>
-    <div class="col col-lg-6">
-  <div class="d-flex">
-    <span class="easy rounded-pill p-1 mt-3 me-3">Easy</span>
-  <span class="asian rounded-pill p-1 mt-3 me-3">Asian</span>
+  </div>
+
+
+  <div class="container p-0">
+    <div class="row gap-0" id="rowdata">
+      <div class="col">
+        <div class="inner">
+           <div class="col-12  col-lg-12  col-md-12">
+  <div class="inner p-3">
+    <div class="d-flex">
+    <span class="easy rounded-pill p-1 me-3 ">Easy</span>
+  <span class="asian rounded-pill p-1  me-3">Asian</span>
   </div>
   <div class="d-flex align-items-center justify-content-between">
     <div class="caption">
       <h1 class="h">Chicken Stir-Fry</h1>
       <p class="p" >Quick and healthy stir-fry with colorful vegetables</p>
     </div>
-    <div class="d-flex g-2">
+    <div class="d-flex ">
       <span><i class="fa-solid fa-bookmark bookmark"></i></span>
       <span><i class="fa-solid fa-share-nodes nodes"></i></span>
     </div>
 
 
   </div>
-<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" 
-            id="ingredients-tab" 
-            data-bs-toggle="pill" 
-            data-bs-target="#ingredients" 
-            type="button" role="tab" 
-            aria-controls="ingredients" 
-            aria-selected="true">
+<div class="p-2 ">
+  <ul class="nav nav-pills mb-3 d-flex w-100 justify-content-center text-center p-0" id="pills-tab" role="tablist">
+  <li class="nav-item flex-fill " role="presentation">
+    <button class="nav-link active p-1" id="ingredients-tab" data-bs-toggle="pill" data-bs-target="#ingredients" type="button" role="tab" aria-controls="ingredients" aria-selected="true">
       <i class="fa-solid fa-list-check"></i> Ingredients
     </button>
   </li>
-
-  <li class="nav-item" role="presentation">
-    <button class="nav-link"
-            id="instructions-tab" 
-            data-bs-toggle="pill" 
-            data-bs-target="#instructions" 
-            type="button" role="tab" 
-            aria-controls="instructions" 
-            aria-selected="false">
+  <li class="nav-item flex-fill" role="presentation">
+    <button class="nav-link p-1" id="instructions-tab" data-bs-toggle="pill" data-bs-target="#instructions" type="button" role="tab" aria-controls="instructions" aria-selected="false">
       <i class="fa-solid fa-book-open"></i> Instructions
     </button>
   </li>
-
-  <li class="nav-item" role="presentation">
-    <button class="nav-link"
-            id="nutrition-tab" 
-            data-bs-toggle="pill" 
-            data-bs-target="#nutrition" 
-            type="button" role="tab" 
-            aria-controls="nutrition" 
-            aria-selected="false">
+  <li class="nav-item flex-fill" role="presentation">
+    <button class="nav-link p-1" id="nutrition-tab" data-bs-toggle="pill" data-bs-target="#nutrition" type="button" role="tab" aria-controls="nutrition" aria-selected="false">
       <i class="fa-solid fa-chart-pie"></i> Nutrition
     </button>
   </li>
-
-  <li class="nav-item" role="presentation">
-    <button class="nav-link"
-            id="chef-tab" 
-            data-bs-toggle="pill" 
-            data-bs-target="#chef" 
-            type="button" role="tab" 
-            aria-controls="chef" 
-            aria-selected="false">
+  <li class="nav-item flex-fill" role="presentation">
+    <button class="nav-link p-1" id="chef-tab" data-bs-toggle="pill" data-bs-target="#chef" type="button" role="tab" aria-controls="chef" aria-selected="false">
       <i class="fa-solid fa-lightbulb"></i> Chef's Tips
     </button>
   </li>
-
 </ul>
+</div>
+
+
 
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="ingredients" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-    <div class=" ingredients maincolor p-3 rounded-2 mb-3 ">
+    <div class=" ingredients maincolor  rounded-2 mb-3 ">
  <p><span class="number">1</span>500g chicken breast, sliced</p> 
  <p><span class="number">2</span>2 bell peppers, sliced</p>
  <p><span class="number">3</span>1 broccoli head, florets</p>
@@ -191,52 +179,43 @@
 
 </div>
   <div class="tab-pane fade" id="nutrition" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-    <div class="nutrition">
-  <div class=" col-lg-12 d-flex justify-content-center align-items-center ">
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-fire fire"></i></span> Calories</p>
-    <h4 class="h4">320 kcal</h4>
-
+  <div class="nutrition">
+    <div class="row justify-content-center gap-2">
+     <div class="d-flex gap-2">
+       <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-fire fire"></i></span> Calories</p>
+        <h4 class="h4">320 kcal</h4>
+      </div>
+      <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-dumbbell dumbbell"></i></span> Protein</p>
+        <h4 class="h4">34g</h4>
+      </div>
+     </div>
+      <div class="d-flex gap-2">
+        <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-wheat-awn wheat"></i></span> Carbohydrates</p>
+        <h4 class="h4">18g</h4>
+      </div>
+      <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-droplet blood"></i></span> Fat</p>
+        <h4 class="h4">12g</h4>
+      </div>
+      </div>
+      <div class="d-flex gap-2">
+        <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-seedling plant"></i></span> Fiber</p>
+        <h4 class="h4">5g</h4>
+      </div>
+      <div class="col-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 mb-3">
+        <p class="p"><span><i class="fa-solid fa-cube cube"></i></span> Sugar</p>
+        <h4 class="h4">10g</h4>
+      </div>
+      </div>
+    </div>
   </div>
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-dumbbell dumbbell"></i></span> Protein</p>
-    <h4 class="h4">34g</h4>
 </div>
 
 
-
-</div>
-<div class=" col-lg-12 d-flex justify-content-center align-items-center ">
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-wheat-awn wheat"></i></span> Carbohydrates</p>
-    <h4 class="h4">18g</h4>
-
-  </div>
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-droplet blood"></i></span> Fat</p>
-    <h4 class="h4">12g</h4>
-</div>
-
-
-
-</div>
-<div class=" col-lg-12 d-flex justify-content-center align-items-center ">
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-seedling plant"></i></span> Calories</p>
-    <h4 class="h4">320 kcal</h4>
-
-  </div>
-  <div class=" col-lg-6 d-flex justify-content-between align-items-center cal rounded-2 p-2 m-2 mb-3">
-    <p class="p"><span><i class="fa-solid fa-cube cube"></i></span> Protein</p>
-    <h4 class="h4">34g</h4>
-</div>
-
-
-
-</div>
-
-</div>
-</div>
   <div class="tab-pane fade" id="chef" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
     <div class="Chef1">
   <div class="chef-tips mb-3">
@@ -253,13 +232,14 @@
   </div>
 </div> </div>
 </div>
-   
-</div>
-
   </div>
+   <button class=" ms-5 rounded-2 try" onclick=" changeRecipe()"><i class="fa-solid fa-arrows-rotate"></i> Try Another Recipe</button>
 </div>
-
-
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>

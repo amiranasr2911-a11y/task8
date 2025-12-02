@@ -3,7 +3,8 @@ body{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     overflow-x: hidden;
 }
-.bg-white{
+
+.navbar{
     background-color: white;
 }
 ::marker {
@@ -67,24 +68,23 @@ body{
 .container.bg-white {
   max-height: 600px; 
   overflow-y: auto;  
-  padding: 20px;
 }
 
 
-.col-12.col-lg-6.position-relative {
-  height: 600px; 
+.inner.position-relative {
+  height: 100vh; 
   position: relative;
 }
 
-.col-12.col-lg-6.position-relative img {
+.inner.position-relative img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
 }
 
 .image{
     position: relative;
     border-top-left-radius:8px ;
+    object-fit: cover;
 
 }
 
@@ -95,9 +95,11 @@ body{
 }
 
 .padge2{
-    bottom:6px;
-    left: 90px;
+    bottom:10px;
+    left: 50%;
     background-color: white;
+    transform: translateX(-50%);
+
 }
 .fa-solid.fa-utensils{
 background-image: linear-gradient(to right, #FF0000, #FD3F2A);
@@ -223,6 +225,32 @@ background-color:#FFEDD4;
   margin-right: 15px;       
   flex-shrink: 0;            
 }
+.nav-item {
+  flex: 1;       
+}
+
+.nav-link {
+  width: 100%;     
+  text-align: center;
+}
+#pills-tab {
+  display: flex;
+  flex-wrap: nowrap !important; 
+  width: 100%;
+}
+
+#pills-tab .nav-item {
+  flex: 1 1 0 !important; 
+}
+
+#pills-tab .nav-link {
+  width: 100% !important; 
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 5px;
+  font-size: 14px; 
+}
+
 
 .cal{
     background-color: #F9FAFB;
@@ -407,5 +435,20 @@ background-color:#DBFCE7;
   border-radius: 4px;
 }
 
+.try {
+    background-image: linear-gradient(to right,#FF6900,#F54A00);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.try:hover {
+    background-image: linear-gradient(to right,#F44500,#E80005);
+    transform: scale(1.1); 
+}
 
 
